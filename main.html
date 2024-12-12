@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Luxe - A Legacy of Time and Elegance</title>
+    <style>
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            0%, 90% { border-color: transparent; }
+            50%, 100% { border-color: #333; }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #5a5a5a;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .excellence-background {
+            position: absolute;
+            font-size: 10vw;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 1;
+            user-select: none;
+            white-space: nowrap;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #333;
+            width: 0;
+            animation: typewriter 3s steps(12, end) forwards, blink 1s step-end infinite 3s;
+        }
+
+        .watch-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeInScale 4.3s ease-out;
+        }
+
+        .watch-image {
+            max-width: 40%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.8rem;
+            color: #666;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="main.html" class="logo">CHRONOS LUXE</a>
+        <div>
+            <a href="main.html" style="margin-right: 1rem;">Home</a>
+            <a href="collections.html" style="margin-right: 1rem;">Collection</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="excellence-background">EXCELLENCE.</div>
+        <div class="watch-container">
+            <img src="watchchch.png" alt="Chronos Luxe Watch" class="watch-image">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Chronos Luxe. All rights reserved.<br>
+        Crafted with precision and passion.
+    </footer>
+</body>
+</html>
